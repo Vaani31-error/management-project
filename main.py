@@ -1,20 +1,16 @@
-#code for a tution class
-class Tution:
-    name_institute = "ABC classes"
-    area = "xyzcolony"
+class Cars:
+    brand = "Mahindra"
+    model = "XUV"
 
-    def __init__(self, name, age, course, fee_status):
+    def __init__(self, name, colour):
         self.name = name
-        self.age = age
-        self.course = course
-        self.fee_status = fee_status
+        self.colour = colour
+
+    def fun(self):
+        print("This is a newly launched car with CNG feature")
 
 
-print("data of students in database......")
-
-stu1 = Tution("ravi", 22, "java", "submitted")
-print(stu1.name,stu1.age,stu1.course,stu1.fee_status)
-print(Tution.area,Tution.name_institute)
-
-
-
+car1 = Cars("breezze", "white")
+print(car1.brand,car1.model)
+print(car1.name, car1.colour)
+car1.fun()
